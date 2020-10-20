@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Dashboard.css">
+</head>
+<body>
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "400px";
+        }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        
+    function disp1(){
+        alert("CAUTION: If you have already filled the form, then you will be booted to the edit response page");
+    }
+
+    function dispa(){
+        alert("CAUTION: if you have not applied for any proposal, you will be booted to application page");
+    } 
+    </script>
+
+
+
+    <div class="container"><h5>GOVERNMENT OF KARNATAKA</h5>
+            <h1>VISION GROUP ON SCIENCE AND TECHNOLOGY</h1>
+            <h6>DEPARTMENT OF INFORMATION TECHNOLOGY, BIOTECHNOLOGY AND SCIENCE & TECHNOLOGY</h6>
+    </div>
+        <div class="topnav">  
+            <a class="user" href="Annexure-III(A)/login.html"><img  class="IMG" alt="USER INFO" src="https://www.pinclipart.com/picdir/big/221-2217551_user-icon-png-clipart-computer-icons-user-green.png"></img></a>
+    <!--     <a onclick="openNav()"><div class="atag">𝌆</div></a>--> 
+            <a  href="index.html"><div class="active">Home</div></a>        
+                <div class="dropdown">
+                <button  class="dropbtn">Apply</button>
+                <div id="dropdown-content">
+                <a href="AnnexureIIIForm.html" onclick="disp1()" >Annexure-III</a>
+                <a href="AnnexureVForm.html" onclick="disp1()" >Annexure-V</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                <button class="dropbtn">Edit</button>
+                <div id="dropdown-content">
+                    <a href="AnnexureIIIForm.html" onclick="dispa()"  >Annexure-III</a>
+                    <a href="AnnexureIVForm.html"  onclick="dispa()"  >Annexure-IV</a>
+                    <a href="AnnexureVForm.html"   onclick="dispa()"  >Annexure-V</a>
+                </div>
+            </div>
+        </div>
+
+
+<div id="mySidenav" class="sidenav">
+    <ul>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <li><a href="Guidelines1.html" class="scheme">Guidelines</a></li>
+        <li><a href="Annexure-III(A)/login.html" class="scheme">Apply for Proposal</a></li>
+        <li><a href="log_in/login.html" class="scheme">Edit Proposal</a></li>
+        <li><a href="Annexure-IV/login.html" class="scheme">Apply for ARP</a></li>
+        <li><a href="Annexure-V/login.html"  class="scheme">Apply for FDP-Engineering Colleges</a></li>
+        <li><a href="" class="scheme">More options</a></li>
+    </ul>
+    </div>
+<div>
+    <iframe id="AnnexureIV" src="https://docs.google.com/forms/d/e/1FAIpQLScX7H14IC9ZoKUnjkzSlEUIphhvxSQPby03GaQmR3kdiXRhsA/viewform?embedded=true" width="640" height="1973" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+</body>
+</html>
